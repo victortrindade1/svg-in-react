@@ -1,0 +1,15 @@
+.svg-icon path {
+  transition: 250ms;
+}
+
+.svg-icon:hover path {
+  fill: #292;
+}
+
+.svg-icon.bigger:hover path {
+  fill: #49c;
+}
+
+body {
+  background-color: coral;
+}
