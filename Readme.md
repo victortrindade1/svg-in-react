@@ -91,18 +91,25 @@ Repare que quando modificou pra JS, criou um className
 `.svg-icon`, ou dar nome de classe no arquivo JS qnd chama como componente, e no
 css chamar como `.svg-icon.<nome da classe>`.
 
-Outra observação é para o nome `path`, q deve aparecer no css por estarmos
-estilizando dentro da tag path. Fica assim:
+Outra observação é para o nome `path`. Se quiser usar a propriedade `fill`
+(colore dentro), vc deve usar a path. Já se quiser um `width`, aí não é na tag
+`path`, e sim na tag `svg`. Fica assim:
 
 ```css
 .svg-icon path {
   transition: 250ms;
+  fill: "white";
+}
+
+.svg-icon {
+  width: 50px;
 }
 
 .svg-icon:hover path {
   fill: #292;
 }
 
+/* Com class definida */
 .svg-icon.my-class-name-in-component:hover path {
   fill: #49c;
 }
